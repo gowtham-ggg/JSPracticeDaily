@@ -55,20 +55,20 @@ try {
     console.log(expect(5).toBe(5));
 }
 catch (error){
-    console.log(error);
+    console.log(error.message);
 }
 
 try {
     console.log(expect(5).toBe(null));
 }
 catch (error){
-    console.log(error);
+    console.log(error.message);
 }
 try {
     console.log(expect(5).notToBe(5));
 }
 catch (error){
-    console.log(error);
+    console.log(error.message);
 }
 
 /**

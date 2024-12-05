@@ -43,6 +43,7 @@ var map = function(arr, fn) {
         result.push(fn(arr[i], i));
     }
     
+    
     // Return the new array with transformed values
     return result;
 };

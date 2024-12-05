@@ -35,4 +35,4 @@ const f = createHelloWorld();
 
 console.log(f()); // "Hello World"
 console.log(f({}, null, 42)); // "Hello World"
-console.log(f("extra", "arguments")); // "Hello World"
+console.log(f("extra", "arguments")); // "Hello World"``
