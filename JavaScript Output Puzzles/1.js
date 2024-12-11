@@ -76,10 +76,88 @@ abcd(); // Output: gowtham
 function ab(a, b) {
     'use strict';
     a = 100;
-    b = 200;
+     b = 200;
     return arguments[0] + arguments[1]; // After return, nothing will execute
     console.log(a + b); // This line will not be executed
 }
 console.log(ab(3, 2)); // Output: 5
 // Explanation: The `arguments` object does not reflect changes made to the parameters `a` and `b` in strict mode. 
 // Therefore, `arguments[0]` and `arguments[1]` are still 3 and 2 respectively, resulting in 5.
+
+
+// ........................................................................... //
+
+console.log("A"-1); //NAN
+console.log("gowtham" + "100"); // gowtham 100
+
+// ........................................................................... //
+
+console.log("2"+ 2 + "2"); //222
+
+// ........................................................................... //
+
+console.log("2"+ 2 - "2"); //20
+
+// ........................................................................... //
+
+const a = {};
+const b = {name : "gowtham"};
+const c = {name : "vinoth"}
+
+a[b] = {name : "john"};
+
+a[c] = {name : "Doe" };
+
+console.log(a[b]); //Doe
+
+// ........................................................................... //
+
+let y= 0;
+let z = false;
+console.log(y==z); //true
+console.log(y===z); //false
+
+// ........................................................................... //
+//Example for NAN
+console.log(parseInt("m7f")); //NAN
+console.log(NaN == NaN); //false
+console.log(NaN === NaN); //false
+
+// ........................................................................... //
+//Example of map  *** Not mutable ***
+
+const numArr = [2,3,4,5,6];
+let even = numArr.map((num)=> num %2===0);
+console.log("Even : ", even); //[true,false,true,false,true]
+
+const numArrs = [2,3,4,5,6];
+let doubled = numArrs.map((num)=> num *5);
+console.log("Doubled : ", doubled); // [10,15,20,25,30]
+
+// ........................................................................... //
+//sort  ***Mutable***
+const arr2 = [100,50,200,450,34];
+arr2.sort();
+console.log("first method :" ,arr2) //[34,50,100,200,450]
+arr2.sort((a,b)=>a -b);
+console.log("Ascending: ",arr2); //[34,50,100,200,450]
+arr2.sort((a,b)=>b - a);
+console.log( "Decending",arr2);  //[450,200,100,50,34]
+
+// ........................................................................... //
+//it is mutable
+//shift , unshift
+const arr3 = [100,50,200,450,34];
+arr3.shift();
+console.log(arr3); //[50,200,450,34]
+
+arr3.unshift("30");
+console.log(arr3); //[30,50,200,450,34]
+
+// ........................................................................... //
+/*In JavaScript, a higher-order function (HOF) 
+is a function that can take functions as parameters or return a function 
+        *** map(), filter(), reduce() are common examples of HOF ***
+*/
+
+// ........................................................................... //
