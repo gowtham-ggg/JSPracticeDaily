@@ -163,7 +163,7 @@ A **media query** in CSS applies styles based on the user's device characteristi
 
 ### **Syntax**  
 ```css
-@media (max-width: 600px) {
+@ media (max-width: 600px) {
     body {
         background-color: lightblue;
     }
