@@ -160,7 +160,15 @@ The **CSS box model** is a fundamental concept that describes the rectangular bo
 ## 5. What is a Media Query?  
 
 A **media query** in CSS applies styles based on the user's device characteristics, like screen size, resolution, or orientation. It enables responsive design for different devices.  
-
+```
+### **Syntax**  
+```css
+@ media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+```
 ---
 ## 6. What is a Callback Function?  
 
@@ -179,7 +187,7 @@ The receiving function can then execute the callback at a later time, usually af
   - Reading files
   - Timer events
   - Handling DOM events  
-
+```
 ### **Syntax Example:**
 ```javascript
 function greet(name, callback) {
@@ -195,7 +203,7 @@ greet("Alice", sayGoodbye);
 // Output:
 // Hello, Alice
 // Goodbye!
-
+```
 ---
 
 ## 7. What is a Promise?  
@@ -212,7 +220,7 @@ A **promise** is an object that represents the outcome of an asynchronous operat
 1. **Pending**: The initial state; the operation is not yet complete.  
 2. **Fulfilled**: The operation is completed successfully, and a value is available.  
 3. **Rejected**: The operation failed, and an error reason is available.  
-
+```
 ### **Syntax Example:**
 ```javascript
 let promise = new Promise((resolve, reject) => {
@@ -223,7 +231,7 @@ let promise = new Promise((resolve, reject) => {
         reject("Error!"); // Reject the promise
     }
 });
-
+```
 ---
 
 ## 8. What is the event loop?
@@ -242,7 +250,7 @@ Output
 Start
 End
 Inside setTimeout
-
+```
 ---
 
 ## 9. what is CSS Preprocessor?
@@ -257,7 +265,7 @@ body {
   font-size: $font-size;
   color: $primary-color;
 }
-
+```
 ---
 
 ## 10. What is AJAX?
@@ -347,7 +355,7 @@ function outerFunction() {
 
 const closureFunction = outerFunction();  // outerFunction() is called, returning innerFunction
 closureFunction();  // Output: I am from outer function
-
+```
 
 ---
 
@@ -363,7 +371,7 @@ const person = {
     }
 };
 person.greet();  // Output: Alice
-
+```
 
 --- 
 # 17. What is React JS and its use?
