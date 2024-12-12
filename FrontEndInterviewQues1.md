@@ -417,3 +417,87 @@ These stages are called the component lifecycle, and React provides lifecycle me
 A ref is a reference to a DOM element or component instance. It's a way to access and modify DOM elements without using props or states.
 
 ---
+# 23. Explain map, filter, and reduce?
+
+### **map() Method**
+The map() method in JavaScript is used to create a new array by applying a function to each element of the original array. 
+It iterates through each element of the array and invokes a callback function for each element. 
+The result of the callback function is then added to the new array.
+```
+let arr= [2, 4, 8, 10]
+let updatedArr = arr.map(val=> val+2)
+console.log(arr);
+console.log(updatedArr); //[4,6,10,12]
+```
+### **filter() Method**
+The filter() method in JavaScript is used to create a new array with all elements that pass a certain condition defined by a callback function. 
+It iterates through each element of the array and invokes the callback function for each element. 
+If the callback function returns true for an element, that element is included in the new array; otherwise, it is excluded.
+```
+let arr = [2, 4, 8, 10];
+let updatedArr = arr.slice().filter(val => val < 5);
+console.log(arr);
+console.log(updatedArr); //[2,4]
+```
+### **reduce() Method**
+The reduce() method in JavaScript is used to reduce an array to a single value. 
+It executes a provided callback function once for each element in the array, resulting in a single output value. 
+The callback function takes four arguments: accumulator, currentValue, currentIndex, and the array itself.
+```
+let arr= [2,4,8,10]
+let updatedArr = arr.reduce((prev, curr)=> curr= prev+curr)
+console.log(arr);
+console.log(updatedArr);//24
+```
+---
+
+# 24. Difference between state and props in React JS?
+### **States**
+State is a built-in React feature that allows components to store and manage data that can change over time.
+State is used to handle dynamic data, such as user inputs, component interaction, or fetched data.
+
+### **props**
+Props (short for "properties") are used to pass data from a parent component to a child component.
+Data passed from a parent component to a child component, read-only and immutable by the child.
+
+---
+# 25. what is Virtual Dom?
+Virtual DOM (Document Object Model) is a lightweight, in-memory representation of the actual DOM. 
+It acts as a blueprint of your UI, which frameworks like React use to optimize updates and rendering.
+
+---
+# 26 How does react works?
+React creates virtual DOM. when the state changes in component then it first run "diffing" algorithm.
+which identifies what has changed in the virtual DOM.
+The second step is reconciliation, where it updates the DOM with the result of diffs.
+
+---
+# 27. What is a router in React?
+React Router is a library for handling routing and navigation in React JS Applications. 
+It allows you to create dynamic routes providing a seamless user experience by mapping various URLs to components. 
+It enables navigation in single-page application (SPA) without refreshing the entire page.
+
+---
+# 28. Server-side rendering?
+Server-Side Rendering (SSR) in React is a technique that involves rendering React components on the server side instead of the client side (browser).
+Traditionally, React applications are rendered on the client side, meaning that the browser downloads the JavaScript bundle, executes it, 
+and renders the UI. In contrast, with SSR, the server pre-renders the React components into HTML before sending it to the client.
+
+---
+# 29. How to optimize the performance of a web application?
+>Optimizing images and other media files.
+>Minimizing HTTP requests by reducing the number of elements on a page.
+>Enabling browser caching.
+>Using content delivery networks (CDNs).
+>Minifying CSS, JavaScript, and HTML code.
+
+---
+# 30. Flexbox and what it does?
+Flexbox is a CSS layout system that allows you to arrange elements in a container in a flexible way
+Flexbox arranges elements in rows or columns, and the elements can grow or shrink to fit the container space. 
+This makes it useful for aligning items of different sizes.
+
+---
+# 31. Difference between real and virtual DOM?
+Real DOM is the actual structure represented in the User Interface and 
+The virtual DOM object is the same as a real DOM object, except that it is a lightweight copy.
