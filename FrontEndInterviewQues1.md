@@ -485,11 +485,12 @@ and renders the UI. In contrast, with SSR, the server pre-renders the React comp
 
 ---
 # 29. How to optimize the performance of a web application?
->Optimizing images and other media files.
->Minimizing HTTP requests by reducing the number of elements on a page.
->Enabling browser caching.
->Using content delivery networks (CDNs).
->Minifying CSS, JavaScript, and HTML code.
+> Ways to optimize performance:
+> * Optimizing images and other media files.
+> * Minimizing HTTP requests by reducing the number of elements on a page.
+> * Enabling browser caching.
+> * Using content delivery networks (CDNs).
+> * Minifying CSS, JavaScript, and HTML code.
 
 ---
 # 30. Flexbox and what it does?
