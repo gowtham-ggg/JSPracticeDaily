@@ -161,3 +161,10 @@ is a function that can take functions as parameters or return a function
 */
 
 // ........................................................................... //
+const arr4 = ["color 1", "color 2", "color 3"];
+const [g,j] = arr4;
+console.log(g); //color 1
+console.log(j); //color 2
+
+
+//..............................................................................//

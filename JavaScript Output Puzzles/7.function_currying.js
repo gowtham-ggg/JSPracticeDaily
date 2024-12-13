@@ -37,5 +37,5 @@
         };
       }
       
-      console.log(infiniteCurry(1)(2)(3)(4)()); // Output: 10
+      console.log(infiniteCurry(1)(2)(3)(4) () )// Output: 10
       

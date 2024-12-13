@@ -304,13 +304,13 @@ Pushes local commits to the remote repository.
 ### **`null` type :Object  **
 A deliberate absence of a value or object
 
-Example : let user = null;  // No user is assigned yet
+- Example : let user = null;  // No user is assigned yet
 
 ### **`undefined`**
 A variable that has been declared but not assigned a value.
-Example :
-let name;  // Declared but not assigned
-console.log(name);  // Output: undefined
+- Example :
+- let name;  // Declared but not assigned
+- console.log(name);  // Output: undefined
 
 ---
 
@@ -338,7 +338,7 @@ Regular functions are hoisted to the top of their containing scope, while arrow 
 
 ---
 
-# 15  What is a closer?
+# 15  What is a closuer?
 When you create a function inside another function, the inner function can access variables from the outer function.
 A closure allows the inner function to continue accessing those variables, even after the outer function has returned.
 
@@ -407,9 +407,9 @@ Webpack can make files smaller and faster, which can help your site load faster.
 # 21 Life cycle method in React JS?
 React components go through a series of stages from when they are created to when they are removed from the DOM. 
 These stages are called the component lifecycle, and React provides lifecycle methods to hook into three stages.
-**Mounting** - This phase begins when a component is created and inserted into the DOM.
-**Updating** - This occurs when a component is re-rendered due to changes in props or state.
-**Unmounting** - This is the final phase when a component is removed from the DOM.
+- **Mounting** - This phase begins when a component is created and inserted into the DOM.
+- **Updating** - This occurs when a component is re-rendered due to changes in props or state.
+- **Unmounting** - This is the final phase when a component is removed from the DOM.
 
 --- 
 
