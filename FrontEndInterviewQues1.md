@@ -502,3 +502,11 @@ This makes it useful for aligning items of different sizes.
 # 31. Difference between real and virtual DOM?
 Real DOM is the actual structure represented in the User Interface and 
 The virtual DOM object is the same as a real DOM object, except that it is a lightweight copy.
+
+---
+
+# 32. what is Asynchronous JavaScript?
+
+![img](src/1.png)
+![img](src/2.png)
+![img](src/3.png)
