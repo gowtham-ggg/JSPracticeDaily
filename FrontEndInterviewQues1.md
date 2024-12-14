@@ -510,3 +510,81 @@ The virtual DOM object is the same as a real DOM object, except that it is a lig
 ![img](src/1.png)
 ![img](src/2.png)
 ![img](src/3.png)
+
+---
+# 33. what is Destructuring ?
+It is a technique that breaks down data structures, such as arrays and objects, into separate variables for easier access to their value.
+
+---
+
+# 34. What is optional Chaining?
+- It allows accessing properties on an object, that may or may not exist, with a compact syntax. It can be used with the ?. operator when accessing properties. 
+- Optional Chaining allows you to write code which can immediately stop running expressions when it hits a null or undefined.
+
+---
+# 35 What is set?
+
+![img](src/set.png)
+
+---
+# 36. what is Polymorphism?
+The polymorphism in JavaScript allows you to define multiple methods with the same name and different functionalities. 
+Polymorphism is achieved by using method overloading and overriding. 
+- Method Overriding: A child class overrides a method of its parent class.
+- Method Overloading (simulated): A function behaves differently based on the number or type of its arguments.
+``` javascript
+
+class Animal {
+  speak() {
+    console.log("The animal makes a sound");
+  }
+}
+
+class Dog extends Animal {
+  speak() {
+    console.log("The dog barks");
+  }
+}
+
+class Cat extends Animal {
+  speak() {
+    console.log("The cat meows");
+  }
+}
+
+// Polymorphic behavior
+const animals = [new Animal(), new Dog(), new Cat()];
+
+animals.forEach(animal => {
+  animal.speak(); // Calls the appropriate speak() method for each object
+});
+
+Output :
+ //The animal makes a sound
+//The dog barks
+//The cat meows
+
+```
+---
+# 37. what is abstraction ?
+JavaScript abstraction refers to the concept of hiding complex implementation details and showing only the essential features or functionalities of an object or module to the user also it is the fundamental concept in object-oriented programming.
+
+---
+# 38. what is encapsulation ?
+- Encapsulation in JavaScript is a concept that involves bundling data (attributes) and the methods (functions) that operate on that data into a single unit, known as an object. 
+
+- This bundling restricts direct access to some of the object's components, preventing unintended interference and misuse. 
+
+- Encapsulation helps in organizing and managing the complexity of code and promotes the principle of ** data hiding **, where the internal details of an object are hidden from external code.
+
+---
+
+# 39. what is Inheritance ?
+It is the process of passing down properties and methods from a parent class to a child class.
+
+---
+
+# 40. What is Recursion ?
+Recursion is the technique of making a function call itself. For example, we can define the operation "find your way home" as: If you are at home, stop moving. Take one step toward home.
+
+---
