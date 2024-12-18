@@ -57,3 +57,72 @@ console.log([...arr4, ...arr3]); //[ 6, 7, 8, 9,1, 2, 3, 5]
 
 //---------------------------------------------------------------------//
 
+var a = 10;
+console.log(a); //100
+function a(){
+    console.log(20); 
+}
+console.log(a); //10
+
+//----------------------------------------------------------------------//
+
+console.log(Array(1,2));// [1,2]
+console.log(Array(2)); // [<2 empty items] 
+
+//----------------------------------------------------------------------//
+
+console.log(NaN == true); // NaN = 1  false
+console.log(NaN == false); // NaN = 0 false
+
+//--------------------------------------------------------------------------//
+if (NaN) {
+    console.log("i'm there")
+}
+else{
+  console.log("i'm not there")
+} // i'm not there
+
+//...........................................................................//
+// infinite currying
+
+function add(a){
+    if(a === undefined){
+        return 0
+    }
+    return function(b){
+        if(b === undefined){
+            return a
+        }
+        return add(a + b);
+    }
+}
+console.log(add(1)(2)(3)(4)());
+
+//----------------------------------------------------------------------------//
+function adds(a, b){
+   if(b !== undefined){
+    return a + b;
+   }
+   return function(b){
+    return a + b;
+   }
+}
+console.log(adds(1,2));  //3
+console.log(adds(1)(2)); //3
+console.log("end..........................................")
+//---------------------------------------------------------------------------//
+
+function sum1(a=100, b=200){
+    console.log(a + b); // null + 20 => 20
+}
+
+console.log(sum1(null, 20)); //undefined
+
+function sum2(a=100, b=200){
+    console.log(a + b); // 100 + 20 => 120
+}
+
+console.log(sum2(undefined, 20)); // undefined
+
+console.log(null + 2); //2
+ 

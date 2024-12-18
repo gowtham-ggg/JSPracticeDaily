@@ -588,3 +588,19 @@ It is the process of passing down properties and methods from a parent class to 
 Recursion is the technique of making a function call itself. For example, we can define the operation "find your way home" as: If you are at home, stop moving. Take one step toward home.
 
 ---
+# 41. What is Lexical Scope?
+Lexical scope is the ability for a function scope to access variables from the parent scope.
+
+```
+function x(){
+  var a=10;
+  function y(){
+      console.log(a); // will print a , because of lexical scope, it will first look 'a' in 
+  //its local memory space and then in its parent functions memory space
+  }
+  y();
+}
+x();
+```
+---
+# 42. 
