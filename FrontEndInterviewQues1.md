@@ -689,3 +689,7 @@ greet(...details);  // Output: Hello, Alice! You are 25 years old.
 ---
 # 46. What is Context Api?
 Context API is used to pass global variables anywhere in the code without the prop drilling. It helps when there is a need for sharing state between a lot of nested components. It is light in weight and easier to use, to create a context just need to call React.createContext(). No need to install other dependencies or third-party libraries like redux for state management.
+---
+# 47. What is lazy loading?
+Lazy loading is a technique that delays the loading of resources until they are needed, which can improve a website's performance and user experience
+---
