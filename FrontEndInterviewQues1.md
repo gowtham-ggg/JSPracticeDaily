@@ -235,7 +235,7 @@ let promise = new Promise((resolve, reject) => {
 ---
 
 ## 8. What is the event loop?
-The event loop enables asynchronous programming, allowing developers to write code 
+- The event loop enables asynchronous programming, allowing developers to write code 
 that can execute operations without waiting for previous ones to complete.
 
 ```javascript
@@ -251,6 +251,9 @@ Start
 End
 Inside setTimeout
 ```
+- What is precedence in Event Loop?  
+In the Event Loop, **micro-tasks** (e.g., Promises) have higher priority than **macro-tasks** (e.g., `setTimeout`). Micro-tasks are executed immediately after the current operation, before any macro-tasks. This ensures Promises and other micro-tasks run first, even if macro-tasks were queued earlier.
+- **Promise first! Timed out second!**
 ---
 
 ## 9. what is CSS Preprocessor?
@@ -423,7 +426,7 @@ A ref is a reference to a DOM element or component instance. It's a way to acces
 The map() method in JavaScript is used to create a new array by applying a function to each element of the original array. 
 It iterates through each element of the array and invokes a callback function for each element. 
 The result of the callback function is then added to the new array.
-```
+```javascript
 let arr= [2, 4, 8, 10]
 let updatedArr = arr.map(val=> val+2)
 console.log(arr);
@@ -433,7 +436,7 @@ console.log(updatedArr); //[4,6,10,12]
 The filter() method in JavaScript is used to create a new array with all elements that pass a certain condition defined by a callback function. 
 It iterates through each element of the array and invokes the callback function for each element. 
 If the callback function returns true for an element, that element is included in the new array; otherwise, it is excluded.
-```
+```javascript
 let arr = [2, 4, 8, 10];
 let updatedArr = arr.slice().filter(val => val < 5);
 console.log(arr);
@@ -443,7 +446,7 @@ console.log(updatedArr); //[2,4]
 The reduce() method in JavaScript is used to reduce an array to a single value. 
 It executes a provided callback function once for each element in the array, resulting in a single output value. 
 The callback function takes four arguments: accumulator, currentValue, currentIndex, and the array itself.
-```
+```javascript
 let arr= [2,4,8,10]
 let updatedArr = arr.reduce((prev, curr)=> curr= prev+curr)
 console.log(arr);
@@ -591,7 +594,7 @@ Recursion is the technique of making a function call itself. For example, we can
 # 41. What is Lexical Scope?
 Lexical scope is the ability for a function scope to access variables from the parent scope.
 
-```
+```javascript
 function x(){
   var a=10;
   function y(){
@@ -603,4 +606,86 @@ function x(){
 x();
 ```
 ---
-# 42. 
+# 42.  What is the difference between `setTimeout` and `setInterval`?
+- setTimeout executes the code only once after the specified delay,
+- setInterval executes the code repeatedly at the specified interval.
+
+---
+
+# 43. Where do you use Rest Operator? 
+
+- The rest operator ... is used to group multiple values into one variable, especially when you need to handle an unknown or variable number of arguments or elements.
+
+Examples : 
+- In Function Parameters (to collect arguments): When you don't know how many arguments will be passed to a function, you can use the rest operator to collect them into an array
+
+``` javaScript
+  function sum(...numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+
+console.log(sum(1, 2, 3, 4));  // Output: 10
+
+```
+- In Array Destructuring (to collect remaining elements): You can use it to collect the remaining items in an array after destructuring.
+
+```javascript
+const [first, second, ...others] = [1, 2, 3, 4, 5];
+console.log(first);   // 1
+console.log(second);  // 2
+console.log(others);  // [3, 4, 5]
+
+```
+- In Object Destructuring (to collect remaining properties): The rest operator can also collect remaining properties when destructuring objects.
+
+```javascript
+const person = { name: 'Alice', age: 25, country: 'USA' };
+const { name, ...others } = person;
+console.log(name);    // Alice
+console.log(others);  // { age: 25, country: 'USA' }
+
+```
+
+---
+# 44. What is spread Operator?
+
+  The spread operator ... is used to expand elements or properties from arrays or objects into individual elements or key-value pairs. It's useful for copying, merging, or passing values efficiently
+
+- In Arrays (to spread elements): You can use the spread operator to combine arrays or make a copy of an array.
+``` javascript
+const numbers = [1, 2, 3];
+const moreNumbers = [...numbers, 4, 5];
+console.log(moreNumbers);  // Output: [1, 2, 3, 4, 5]
+
+```
+- In Objects (to spread properties): The spread operator can also be used to copy or merge object properties.
+
+```javascript
+const person = { name: 'Alice', age: 25 };
+const address = { city: 'New York', country: 'USA' };
+const fullPerson = { ...person, ...address };
+console.log(fullPerson);  // Output: { name: 'Alice', age: 25, city: 'New York', country: 'USA' }
+
+```
+
+- In Function Arguments (to spread elements as arguments): You can pass elements from an array as individual arguments to a function.
+
+```javascript
+function greet(name, age) {
+  console.log(`Hello, ${name}! You are ${age} years old.`);
+}
+
+const details = ['Alice', 25];
+greet(...details);  // Output: Hello, Alice! You are 25 years old.
+
+```
+---
+# 45. What is meant by Shallow copy and Deep copy?  
+
+- shallow copy
+  Copies the top-level structure of an object or array, but nested elements are shared references with the original.
+- Deep copy
+  Creates a completely new object or array and recursively copies all nested objects and arrays, ensuring no shared references with the original.
+---
+# 46. What is Context Api?
+Context API is used to pass global variables anywhere in the code without the prop drilling. It helps when there is a need for sharing state between a lot of nested components. It is light in weight and easier to use, to create a context just need to call React.createContext(). No need to install other dependencies or third-party libraries like redux for state management.
