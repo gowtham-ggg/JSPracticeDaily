@@ -578,7 +578,7 @@ JavaScript abstraction refers to the concept of hiding complex implementation de
 
 - This bundling restricts direct access to some of the object's components, preventing unintended interference and misuse. 
 
-- Encapsulation helps in organizing and managing the complexity of code and promotes the principle of ** data hiding **, where the internal details of an object are hidden from external code.
+- Encapsulation helps in organizing and managing the complexity of code and promotes the principle of **data hiding**, where the internal details of an object are hidden from external code.
 
 ---
 
