@@ -21,4 +21,14 @@ function checkAnagrams(str1, str2){
     }
     return true;
 }
-console.log(checkAnagrams("silent", "listen"));
+console.log(checkAnagrams("silent", "listen")); //true
+
+//Method 2
+
+function anagram(str1, str2){
+    str1 = str1.toLowerCase();
+    str2 = str2.toLowerCase();
+    return str1.split("").sort().join("") === str2.split("").sort().join("")
+}
+console.log(anagram("Dog", "GoD")); // true
+console.log(anagram("dog", "cat")); //false
