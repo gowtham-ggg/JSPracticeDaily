@@ -41,3 +41,21 @@ A Single Page Application (SPA) is a type of web application that loads a **sing
 
 ## 4. Explain the difference between functional and class components?
 
+- The class component uses ES6 class syntax, and it extends React components with a render method that returns React elements.
+- Functional components with hooks are purely JavaScript functions that also return React elements. Before the introduction of hooks, functional components were stateless.
+
+---
+
+## 5. What is the difference between a stateless and stateful component in React?
+
+- **Stateless**  These components do not have any internal state and depend entirely on the props passed to them.
+- They simply render UI based on the data (props) they receive.
+
+- **stateful**  These components manage their own internal state and can change
+- They handle logic, manage data, and can update themselves using useState, useReducer, or class-based state.
+
+---
+
+## 6. What are Props in React and how they are used ?
+ props are way to pass data from a parent component to a child component in react. The child component cannot modify these value bacause they are read only instead this values are used to trigger certain actions in the child components
+ - props and state are used to control and manipulate how components behave and render
