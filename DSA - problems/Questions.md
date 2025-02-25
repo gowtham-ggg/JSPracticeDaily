@@ -5,9 +5,10 @@
 4. Find the first non-repeating character in a string.  
 5. Find the missing number in an array of 1 to N.  
 6. Rotate an array to the right by K positions.  
-7. Merge two sorted arrays without extra space.   
+7. Find the longest common prefix among an array of strings.   
 8. Longest Substring Without Repeating Characters.  
-
+9. Count the frequency of characters in a string.
+10. Check if two strings are anagrams.
 ### **Sorting & Searching**  
 9. Implement Bubble Sort, Quick Sort, and Merge Sort.  06218
 10. Find the Kth smallest/largest element in an array.  
@@ -57,3 +58,7 @@
 40. Find the Greatest Common Divisor (GCD) of two numbers.  
 41. Implement a function to check if a number is prime.   
 42. Find factorial of a number using recursion.  
+43. Reverse the digits of an integer (1234 → 4321).
+44. Implement a basic calculator using switch case.
+45. Convert decimal to binary and vice versa.
+46. Generate all subsets of a given array (Power Set).

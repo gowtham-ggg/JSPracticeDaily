@@ -70,7 +70,7 @@ A Single Page Application (SPA) is a type of web application that loads a **sing
  ---
  ## 8. What are controlled and uncontrolled components?
  - **Controlled Components** are used when control is required over the data being entered into a form. such as a case of form validations and these are accessed through the state attributes which makes easier to change
- - **Uncontrolled Components** are used whwn there is no need to Dynamic inspect the user Inputs. such us a user subscribing to your newsletter or user uploading file
+ - **Uncontrolled Components** are used when there is no need to Dynamic inspect the user Inputs. such us a user subscribing to your newsletter or user uploading file
 these are managed through ref it bacomes harder to access the value
 
 ---
