@@ -10,7 +10,7 @@
 9. Count the frequency of characters in a string.
 10. Check if two strings are anagrams.
 ### **Sorting & Searching**  
-9. Implement Bubble Sort, Quick Sort, and Merge Sort.  06218
+9. Implement Bubble Sort, Quick Sort, and Merge Sort.
 10. Find the Kth smallest/largest element in an array.  
 11. Search an element in a sorted and rotated array.  
 12. Find a pair in an array with a given sum.  
