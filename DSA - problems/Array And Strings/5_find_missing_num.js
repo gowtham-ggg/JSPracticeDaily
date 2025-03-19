@@ -34,7 +34,7 @@ function findAll(arr, N){
     return missingNum
 }
 
-console.log(findAll([1,2,3,5,7,8,9,18],20)); 
+console.log(findAll([1,2,3,5,7,8,9,18,19],20)); 
 
 /* 
 [
